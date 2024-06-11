@@ -9,10 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // DB Connection
 const dbConfig = {
-    host: 'btw2bu9p01s29x8hplgj-mysql.services.clever-cloud.com',
-    user: 'u7oaqmno7he8keou',
-    password: 'RpLD6MtQImUD6trHT8hL',
-    database: 'btw2bu9p01s29x8hplgj'
+    host: 'bmwafcunoxqlyqyjcroo-mysql.services.clever-cloud.com',
+    user: 'uabbkubechikmldg',
+    password: 'cNZS9kuAoACURbgJuNuq',
+    database: 'bmwafcunoxqlyqyjcroo'
 };
 
 let db;
@@ -89,7 +89,7 @@ app.post('/ussd', (req, res) => {
     // Determine next action based on user input
     if (userInput.length === 1 && userInput[0] === '') {
         // First level menu: Language selection
-        response = `CON Welcome to E-TORA portal\n`;
+        response = `CON Welcome to E-VOTING\n`;
         response += `1. English\n`;
         response += `2. Kinyarwanda`;
         res.send(response);
