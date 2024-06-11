@@ -278,5 +278,8 @@ app.post('/ussd', (req, res) => {
 
     res.send(response);
 });
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
